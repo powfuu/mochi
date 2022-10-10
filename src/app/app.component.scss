@@ -1,0 +1,21 @@
+.scrolltop-v{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    top:92vh;
+    z-index:1;
+    right:0;
+    margin-right:-200px;
+    height:70px;
+    width:70px;
+    border-radius:100%;
+    cursor:pointer;
+    background:#181818;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+#scrolltop-v-a{
+    color:white;
+    font-size:31px;
+}

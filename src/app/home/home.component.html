@@ -1,0 +1,95 @@
+<div class="firstView">
+  <app-nav></app-nav>
+  <img class="selectedImg" [style.opacity]="opacity" src={{path+currentSelection+extension}}/>
+  <div class="titleView">
+  <p data-aos="zoom-in-up" id="title-img" >{{currentSelectionName}}</p>
+  <p data-aos='zoom-in' data-aos-delay='250' id="desc-img">{{currentSelectionDesc}}</p>
+  </div>
+  <div class="switcherView">
+  <img data-aos='zoom-in-up' data-aos-delay='0' id="switcherImg" (click)="onHandleSwitch(1); toggleClicked()" [ngClass]="s1" src="../../assets/1.jpg"/>
+  <img data-aos='zoom-in-up' data-aos-delay='150' id="switcherImg" (click)="onHandleSwitch(2); toggleClicked()" [ngClass]="s2" src="../../assets/2.jpg"/>
+  <img data-aos='zoom-in-up' data-aos-delay='300' id="switcherImg" (click)="onHandleSwitch(3); toggleClicked()" [ngClass]="s3" src="../../assets/3.jpg"/>
+  <img data-aos='zoom-in-up' data-aos-delay='450' id="switcherImg" (click)="onHandleSwitch(4); toggleClicked()" [ngClass]="s4" src="../../assets/4.jpg"/>
+  </div>
+</div>
+  <div class="secondView">
+    <div class="leftside-svv">
+    <div class="leftside-sv">
+      <div class="line-sv"></div>
+      <h1 id="title-sv">Handless House</h1>
+      <p id="subtitle-sv">Division II</p>
+      <p id="desc-sv">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque accumsan fermentum. Ut convallis feugiat euismod. Morbi eu diam fermentum metus sollicitudin imperdiet vel in enim. Curabitur mattis molestie tristique. Nunc suscipit odio purus, fermentum ultrices tortor sollicitudin ut. Duis magna lorem, feugiat non varius at, volutpat vitae est. Phasellus convallis, nulla et cursus tincidunt, ante nisi iaculis dui, euismod aliquet libero felis et nulla. Cras sit amet nibh scelerisque, vulputate elit sed, scelerisque lorem. Integer ultricies volutpat sodales. Pellentesque ultricies felis in ex elementum vulputate. Sed non fermentum magna.
+      </p>
+      <button id="see-houses-b">> See availables houses</button>
+    </div>
+    <div class="leftside-bottom">
+      <div class="leftside-sv-box" *ngFor="let item of lsbox">
+<i [ngClass]='item.ic' id="lf-sv-b-ic" style='color:#dfbd69'  ></i>
+        <p id="lf-sv-b-title">{{item.title}}</p>
+      </div>
+    </div>
+</div>
+    <img src="../../assets/6.png" id="sv-img"/>
+  </div>
+
+  <div class="secondView" style="border:none; background-color: rgb(30,30,30);">
+    <div class="leftside-svv" style="float:right; padding-right:100px;">
+    <div class="leftside-sv" style="background:#252525;">
+      <div class="line-sv"></div>
+      <h1 id="title-sv">Handless House</h1>
+      <p id="subtitle-sv">Division II</p>
+      <p id="desc-sv">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque accumsan fermentum. Ut convallis feugiat euismod. Morbi eu diam fermentum metus sollicitudin imperdiet vel in enim. Curabitur mattis molestie tristique. Nunc suscipit odio purus, fermentum ultrices tortor sollicitudin ut. Duis magna lorem, feugiat non varius at, volutpat vitae est. Phasellus convallis, nulla et cursus tincidunt, ante nisi iaculis dui, euismod aliquet libero felis et nulla. Cras sit amet nibh scelerisque, vulputate elit sed, scelerisque lorem. Integer ultricies volutpat sodales. Pellentesque ultricies felis in ex elementum vulputate. Sed non fermentum magna.
+      </p>
+      <button id="see-houses-b">> See availables houses</button>
+    </div>
+    <div class="leftside-bottom">
+      <div class="leftside-sv-box" style="background:#252525;" *ngFor="let item of lsbox">
+<i [ngClass]='item.ic' id="lf-sv-b-ic" style='color:#dfbd69'  ></i>
+        <p id="lf-sv-b-title">{{item.title}}</p>
+      </div>
+    </div>
+</div>
+    <img src="../../assets/9.png" style="width:700px; float:left; margin-left:160px; margin-right:0px;" id="sv-img"/>
+  </div>
+  <div class="footer-v">
+    <div class="second">
+      <div class="div">
+      <i class='bx bxs-envelope' style="color: #dfbd69;margin-top:2px;"></i>
+      <h1>Email</h1>
+      </div>
+      <p>mochi@realestate.com</p>
+
+    <div style="margin-top:60px;" class="div">
+      <i class='bx bxs-briefcase-alt-2' style="color: #dfbd69; margin-top:0px; margin-right:8px;"></i>
+      <h1>Branch Offices</h1>
+    </div>
+      <p>Múnich, Berlin, Madrid, Lugo, New York.</p>
+    <div style="margin-top:60px;" class="div">
+      <i class='bx bx-male' style="color: #dfbd69; margin-top:0px; margin-right:2px; font-size:28px;"></i>
+      <h1>Employers Number</h1>
+    </div>
+      <p>We have around +11,250+ employers working in our company!</p>
+    </div>
+  <img src="../../assets/footer2.jpg" id="footer"/>
+  <div class="third">
+    <div class="div">
+      <i class='bx bxs-phone' style="color: #dfbd69;"></i>
+      <h1>Phone Number</h1>
+    </div>
+      <p>mochi@realestate.com</p>
+    <div style="margin-top:60px;" class="div">
+      <i class='bx bx-current-location' style="color: #dfbd69; margin-top:1.5px;"></i>
+      <h1>Address</h1>
+    </div>
+      <p>mochi@realestate.com</p>
+
+
+    <div style="margin-top:60px;" class="div">
+      <i class='bx bx-world' style="color: #dfbd69; margin-top:0px;"></i>
+      <h1>Languages</h1>
+    </div>
+    <p>English, Spanish, Deutsch.</p>
+  </div>
+  </div>

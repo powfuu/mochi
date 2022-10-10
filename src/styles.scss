@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300&display=swap');
+html, body {
+     height: 100%;
+     background:#1A1A1A;
+     scroll-behavior: smooth;
+ }
+ *{
+     padding:0;
+     margin:0;
+     overflow-x:hidden;
+     font-family: 'Karla', sans-serif;
+     transition:.4s all ease-in-out;
+     user-select:none;
+ }
+.selectedImg{
+    height:100vh;
+    position:absolute;
+    width:100%;
+    z-index:0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5.5px;
+}
+/* Only FireFox */
+html {scrollbar-color: rgb(180,180,180) transparent;}
+::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(180,180,180);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+  border-radius: 12px;
+}
