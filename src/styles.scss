@@ -38,3 +38,15 @@ html {scrollbar-color: rgb(180,180,180) transparent;}
   background: #666;
   border-radius: 12px;
 }
+#title-template{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    font-size:70px;
+    z-index:10;
+    color:white;
+    font-weight:300;
+    text-shadow: 1.5px 1.5px rgb(50,50,50);
+}
